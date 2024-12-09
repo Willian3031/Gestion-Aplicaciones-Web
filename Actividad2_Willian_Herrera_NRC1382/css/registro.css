@@ -1,0 +1,22 @@
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+form label {
+    flex-basis: 150px;
+}
+
+form input, form select, form button {
+    flex: 1;
+    margin: 5px 0;
+}
+
+form button {
+    align-self: flex-start;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadatos básicos para el archivo HTML -->
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la escala inicial para dispositivos móviles -->
+    <title>Funcionalidades</title> <!-- Título de la página -->
+
+    <!-- Enlaces a hojas de estilo externas -->
+    <link rel="stylesheet" href="css/general.css"> <!-- Estilo general compartido entre todas las páginas -->
+    <link rel="stylesheet" href="css/funcionalidades.css"> <!-- Estilo específico para la página de funcionalidades -->
+</head>
+<body>
+    <!-- Menú de navegación para moverse entre las diferentes páginas -->
+    <nav>
+        <a href="index.html">Inicio</a> <!-- Enlace a la página de inicio -->
+        <a href="funcionalidades.html">Funcionalidades</a> <!-- Enlace a la página actual -->
+        <a href="registro.html">Registro</a> <!-- Enlace a la página de registro de usuarios -->
+    </nav>
+
+    <main>
+        <!-- Encabezado principal de la página -->
+        <h1>Funcionalidades Lógicas</h1>
+
+        <!-- Sección para la comparación de números -->
+        <section id="comparacion">
+            <h2>Comparación de Números</h2> <!-- Subtítulo de la sección -->
+
+            <!-- Campo de entrada para el primer número -->
+            <input type="number" id="num1" placeholder="Número 1">
+
+            <!-- Campo de entrada para el segundo número -->
+            <input type="number" id="num2" placeholder="Número 2">
+
+            <!-- Botón que llama a la función "compararNumeros" al hacer clic -->
+            <button onclick="compararNumeros()">Comparar</button>
+
+            <!-- Contenedor para mostrar el resultado de la comparación -->
+            <div id="resultado-comparacion"></div>
+        </section>
+
+        <!-- Sección para determinar el mes correspondiente -->
+        <section id="switch">
+            <h2>Mes Correspondiente</h2> <!-- Subtítulo de la sección -->
+
+            <!-- Campo de entrada para ingresar un número entre 1 y 12 -->
+            <input type="number" id="mes" placeholder="Número del mes (1-12)">
+
+            <!-- Botón que llama a la función "mostrarMes" al hacer clic -->
+            <button onclick="mostrarMes()">Mostrar Mes</button>
+        </section>
+
+        <!-- Sección para la gestión de arrays -->
+        <section id="arrays">
+            <h2>Gestión de Arrays</h2> <!-- Subtítulo de la sección -->
+
+            <!-- Campo de entrada para ingresar nombres -->
+            <input type="text" id="nombre" placeholder="Ingrese un nombre">
+
+            <!-- Botón que llama a la función "agregarNombre" al hacer clic -->
+            <button onclick="agregarNombre()">Agregar</button>
+
+            <!-- Contenedor para mostrar dinámicamente los nombres ingresados -->
+            <div id="lista-nombres"></div>
+        </section>
+    </main>
+
+    <!-- Archivo JavaScript que contiene las funciones necesarias para las funcionalidades lógicas -->
+    <script src="js/funcionalidades.js"></script>
+</body>
+</html>

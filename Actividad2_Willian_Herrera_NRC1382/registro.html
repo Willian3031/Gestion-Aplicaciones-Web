@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadatos del documento -->
+    <meta charset="UTF-8"> <!-- Codificación de caracteres en UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Habilita el diseño responsivo -->
+    <title>Registro</title> <!-- Título de la página -->
+
+    <!-- Enlaces a hojas de estilo -->
+    <link rel="stylesheet" href="css/general.css"> <!-- Estilo general compartido entre páginas -->
+    <link rel="stylesheet" href="css/registro.css"> <!-- Estilo específico para la página de registro -->
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav>
+        <a href="index.html">Inicio</a> <!-- Enlace a la página de inicio -->
+        <a href="funcionalidades.html">Funcionalidades</a> <!-- Enlace a la página de funcionalidades -->
+        <a href="registro.html">Registro</a> <!-- Enlace a la página de registro -->
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Título principal de la página -->
+        <h1>Registro de Usuarios</h1>
+
+        <!-- Formulario de registro -->
+        <form id="registro-form">
+            <!-- Campo de entrada para el ID del usuario -->
+            <label for="id">ID:</label>
+            <input type="text" id="id" required> <!-- Campo obligatorio -->
+
+            <!-- Campo de entrada para la cédula del usuario -->
+            <label for="cedula">Cédula:</label>
+            <input type="text" id="cedula" required> <!-- Campo obligatorio -->
+
+            <!-- Campo de entrada para el nombre y apellidos del usuario -->
+            <label for="nombre">Nombres y Apellidos:</label>
+            <input type="text" id="nombre" required> <!-- Campo obligatorio -->
+
+            <!-- Campo de entrada para la fecha de nacimiento -->
+            <label for="fecha">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha" required> <!-- Campo obligatorio -->
+
+            <!-- Menú desplegable para seleccionar la ciudad -->
+            <label for="ciudad">Ciudad:</label>
+            <select id="ciudad" required> <!-- Campo obligatorio -->
+                <option value="Quito">Quito</option>
+                <option value="Guayaquil">Guayaquil</option>
+                <option value="Cuenca">Cuenca</option>
+                <option value="Ambato">Ambato</option>
+                <option value="Loja">Loja</option>
+                <option value="Nueva Loja">Nueva Loja</option>
+            </select>
+
+            <!-- Botón para registrar los datos -->
+            <button type="submit">Registrar</button>
+        </form>
+    </main>
+
+    <!-- Archivo JavaScript para manejar las funcionalidades del formulario -->
+    <script src="js/registro.js"></script>
+</body>
+</html>

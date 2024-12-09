@@ -1,0 +1,10 @@
+
+.datos-personales {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 50%;
+}
