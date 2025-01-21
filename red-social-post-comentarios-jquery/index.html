@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Social - Gestión de Posts</title>
+    <!-- Se enlaza la hoja de estilos externa -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Contenedor que da formato al título principal -->
+    <div class="titulo-container">
+        <h1>Red Social - Publicaciones</h1>
+    </div>
+    <!-- Contenedor general que agrupa toda la estructura de la página -->
+    <div class="contenedor-principal">
+        <!-- Sección donde se encuentra el formulario y la lista de publicaciones -->
+        <div class="seccion-publicaciones">
+
+            <!-- Contenedor que encierra el formulario para agregar un nuevo post -->
+            <div class="contenedor-formulario">
+                <div class="formulario">
+                    <!-- Etiqueta e input para ingresar el título del post -->
+                    <label for="titulo">Título del post:</label>
+                    <input type="text" id="titulo" placeholder="Ingrese el título">
+                    
+                    <!-- Etiqueta y textarea para escribir la descripción del post -->
+                    <label for="descripcion">Descripción:</label>
+                    <textarea id="descripcion" placeholder="Ingrese la descripción"></textarea>
+                    
+                    <!-- Botón que permite publicar el post -->
+                    <button id="agregar-post">Publicar</button>
+                </div>
+            </div>
+
+            <!-- Campo de entrada para filtrar publicaciones según el título -->
+            <input type="text" id="filtrar-posts" placeholder="Filtrar por título...">
+            
+            <h2>Publicaciones</h2>
+            <div id="lista-posts"></div>
+        </div>
+    </div>
+
+    <!-- Se enlazan los archivos de JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Biblioteca jQuery -->
+    <script src="js/posts.js"></script> <!-- Archivo con la lógica para manejar los posts -->
+    <script src="js/comments.js"></script> <!-- Archivo para la gestión de comentarios -->
+    <script src="js/main.js"></script> <!-- Archivo principal que gestiona los eventos -->
+
+</body>
+</html>
