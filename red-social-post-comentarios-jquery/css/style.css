@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif; /* Fuente general del texto */
+    margin: 20px; /* Espaciado exterior para toda la página */
+    padding: 0; /* Sin relleno interno */
+    background-color: #f4f4f4; /* Color de fondo de la página */
+    text-align: center; /* Centra el texto en toda la página */
+}
+
+input, textarea, button {
+    width: 80%; /* Hace que los elementos ocupen el 80% del ancho */
+    padding: 10px; /* Espaciado interno */
+    margin: 10px 0; /* Espaciado exterior arriba y abajo */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+input, textarea {
+    border: 1px solid #ccc; /* Borde gris claro */
+}
+
+button {
+    background-color: #28a745; /* Fondo verde para los botones */
+    color: white; /* Texto en blanco */
+    border: none; /* Sin bordes */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+button:hover {
+    background-color: #218838; /* Cambia el color al pasar el mouse */
+}
+
+#lista-posts {
+    margin-top: 20px; /* Espaciado superior para separar las publicaciones */
+}
+
+.post {
+    background-color: white; /* Fondo blanco para cada publicación */
+    padding: 15px; /* Espaciado interno */
+    margin: 10px auto; /* Espaciado exterior y centrado */
+    width: 80%; /* Tamaño del cuadro de publicaciones */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.comentarios {
+    margin-top: 10px; /* Espacio entre el post y los comentarios */
+    padding-top: 10px; /* Espaciado interno */
+    border-top: 1px solid #ddd; /* Línea divisoria entre el post y los comentarios */
+}
+
+/* Centrar todo el contenido */
+.contenedor-principal {
+    display: flex; /* Activa el modelo flexible */
+    flex-direction: column; /* Apila los elementos en columna */
+    justify-content: center; /* Centra los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    width: 90%; /* Ajusta el ancho del contenedor */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+/* Sección de publicaciones */
+.seccion-publicaciones {
+    width: 65%; /* Define el ancho de la sección de publicaciones */
+}
+
+/* Estilo para el formulario */
+.contenedor-formulario {
+    background: #f8f9fa; /* Fondo gris claro */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 20px; /* Espacio entre formulario y publicaciones */
+}
+
+.formulario {
+    display: flex; /* Activa el modelo flexible */
+    flex-direction: column; /* Organiza los elementos en columna */
+}
+
+.formulario label {
+    font-weight: bold; /* Hace que los textos de los labels sean más gruesos */
+    margin-top: 10px; /* Espaciado entre etiquetas */
+}
+
+.formulario input, .formulario textarea {
+    width: 100%; /* Hace que los inputs ocupen todo el ancho disponible */
+    padding: 10px; /* Espaciado interno */
+    margin-top: 5px; /* Espaciado superior */
+    border: 1px solid #ccc; /* Borde gris claro */
+}
+
+/* Contenedor de cada comentario */
+.comentario-item {
+    display: flex; /* Activa el modelo flexible */
+    flex-direction: column; /* Alinea los comentarios en columna */
+    align-items: center; /* Centra los comentarios */
+    margin-bottom: 15px; /* Espaciado inferior */
+    padding: 10px; /* Espaciado interno */
+}
+
+/* Contenedor para los botones de edición y eliminación */
+.botones-comentario {
+    display: flex; /* Activa el modelo flexible */
+    justify-content: center; /* Centra los botones */
+    gap: 10px; /* Espacio entre botones */
+    margin-top: 10px; /* Espaciado superior */
+}
+
+/* Botones de comentarios */
+.botones-comentario button, button.agregar-comentario {
+    padding: 8px 12px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+/* Centrar el botón "Agregar Comentario" */
+button.agregar-comentario {
+    margin: 15px auto; /* Centrado horizontal */
+    display: block; /* Hace que el botón se comporte como bloque */
+}
+
+/* Contenedor del título con fondo */
+.titulo-container {
+    background: linear-gradient(to right, #002244, #004488); /* Fondo degradado */
+    color: white; /* Texto en blanco */
+    padding: 15px 30px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    display: flex; /* Activa flexbox */
+    justify-content: center; /* Centra el contenido */
+    align-items: center; /* Centra verticalmente */
+    width: fit-content; /* Ajusta el ancho al contenido */
+    margin: 20px auto; /* Centrado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Estilos del título */
+.titulo-container h1 {
+    margin: 0; /* Elimina márgenes internos */
+    font-size: 24px; /* Tamaño del texto */
+    font-weight: bold; /* Hace que el texto sea más grueso */
+}
